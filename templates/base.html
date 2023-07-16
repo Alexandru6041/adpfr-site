@@ -16,9 +16,9 @@
 
         <!-- Style Files -->
         <link rel = 'stylesheet' href = "{% static './css/bootstrap.min.css' %}"/>
-        <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'/>
         <link rel = 'stylesheet' href = "{% static './css/index/index-main.css' %}"/>
         <link rel = 'stylesheet' href = "{% static './css/index/index-navbar.css' %}"/>
+
 
         
         {% block navbar %}
@@ -83,7 +83,7 @@
                                     
                                     <li class = "pl-4 pl-md-0 ml-0 ml-md-4 mt-2 pt-1">
                                         <div id="switch">
-                                            <div id="circle"></div>
+                                            {% comment %} <div id="circle"></div> {% endcomment %}
                                         </div>
                                     </li>
                                         
@@ -100,7 +100,7 @@
             <!-- Scripts -->
             <script src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
             <script src = 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
-            <script src = "{% static './js/index/index-navbar.js' %}"></script>
+            <script type = "module" src = "{% static './js/index/index-navbar.js' %}"></script>
             <script src = "{% static './js/index/index-main.js' %}"></script>
         </head>
         
