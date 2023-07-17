@@ -1,4 +1,3 @@
-/* Please ❤ this if you like it! */
 
 
 import CookieController from "../utils/CookieManager.js";
