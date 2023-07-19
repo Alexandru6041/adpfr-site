@@ -1,0 +1,59 @@
+.content-landing-name
+{
+    animation: UpDown 1.80s;
+}
+
+.romania-gradient-landing
+{
+    background: -webkit-linear-gradient(left, blue, yellow, red);
+    background: -o-linear-gradient(right, blue, yellow, red);
+    background: -moz-linear-gradient(right, blue, yellow, red);
+    background: linear-gradient(to right, blue, yellow, red);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-34 {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: ease-in 0.75ms;
+}
+/* Transitions */
+
+@keyframes UpDown
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-757%);
+    }
+
+    to
+    {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
