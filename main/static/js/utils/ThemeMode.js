@@ -16,15 +16,22 @@ export default class ChangeThemeClass
 		
 		$("#switch").on('click', function () {
 			
+			if($("#card-index-page1").hasClass("None"))
+			{
+				$("#card-index-page1").removeClass("None");
+				$("#card-index-page2").removeClass("None");
+				$("#card-index-page3").removeClass("None");
+			}
+			
 
-			if ($("body").hasClass("dark") && !$("#card-index-page1").hasClass("light")) 
+			if ($("body").hasClass("dark") && $("#card-index-page1").hasClass("dark")) 
 			{
 				$("body").removeClass("dark");
 
                 ///Add light theme to the cards
-				$("#card-index-page1").addClass("light");
-				$("#card-index-page2").addClass("light");
-				$("#card-index-page3").addClass("light");
+				$("#card-index-page1").removeClass("dark");
+				$("#card-index-page2").removeClass("dark");
+				$("#card-index-page3").removeClass("dark");
 				
                 $("#switch").removeClass("switched");
 
@@ -41,9 +48,9 @@ export default class ChangeThemeClass
 				$("body").addClass("dark");
 
 				///Remove light theme from the cards
-                $("#card-index-page1").removeClass("light");
-				$("#card-index-page2").removeClass("light");
-				$("#card-index-page3").removeClass("light");
+                $("#card-index-page1").addClass("dark");
+				$("#card-index-page2").addClass("dark");
+				$("#card-index-page3").addClass("dark");
 				
                 $("#switch").addClass("switched");
 				
