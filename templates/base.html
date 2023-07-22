@@ -22,80 +22,76 @@
 
         
         {% block navbar %}
-        <div class="navigation-wrap bg-light start-header start-style">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-md navbar-light">
-                            
-                            <a class="navbar-brand" href="/" target="_blank"> <img src="{% static './assets/images/logo_noBackground.jpg' %}" alt=""> </a>	
-                            
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navigation-wrap bg-light start-header start-style">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav class="navbar navbar-expand-md navbar-light">
                                 
-                                <span class="navbar-toggler-icon"></span>
+                                <a class="navbar-brand" href="/"> <img src="{% static './assets/images/logo_noBackground.jpg' %}" alt=""> </a>	
                                 
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto py-4 py-md-0">
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Linkuri Utile</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Legal</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Licenta Reproducere</a>
-                                            <a class="dropdown-item" href="#">Legislatie</a>
-                                            <a class = "dropdown-item" href = "#">Politica de Confidentialitate</a>
-                                            <a class = "dropdown-item" href = "#">Termeni si Conditii</a>
-                                        </div>
-                                    </li>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Despre Noi</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Cine Suntem</a>
-                                            <a class="dropdown-item" href="#">Ce facem</a>                                               
-                                            <a class = "dropdown-item" href = "#">Management si Structura</a>                                                
-                                            <a class = "dropdown-item" href = "#">Comisii</a>                                                
-                                            <a class = "dropdown-item" href = "#">Membrii nostri</a>                                                
-                                            <a class = "dropdown-item" href = "#">Statutul ADPFR</a>                                                
-                                            <a class="dropdown-item" href="#">Contact</a>                                               
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Misiune</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Adunare Generala</a>
-                                            <a class="dropdown-item" href="#">Cariere ADPFR</a>                                                                                              
-                                            <a class="dropdown-item" href="#">Repertoriu</a>                                                                                              
-                                        </div>
-                                    </li>
-
-                                    <li class = "pl-md-0 ml-0 "></li>
+                                    <span class="navbar-toggler-icon"></span>
                                     
-                                    
-                                    <li class = "pl-4 pl-md-0 ml-0 ml-md-4 mt-2 pt-1">
-                                        <div id="switch">
-                                            {% comment %} <div id="circle"></div> {% endcomment %}
-                                        </div>
-                                    </li>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto py-4 py-md-0">
+
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                            <a class="nav-link" data-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                                        </li>
+
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Legal</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="/licenta-reproducere">Licenta Reproducere</a>
+                                                <a class="dropdown-item" href="#">Legislatie</a>
+                                                <a class = "dropdown-item" href = "#">Politica de Confidentialitate</a>
+                                                <a class = "dropdown-item" href = "#">Termeni si Conditii</a>
+                                            </div>
+                                        </li>
                                         
-                                </ul>
-                            </div>
-                                
-                        </nav>		
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Despre Noi</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Cine Suntem</a>
+                                                <a class="dropdown-item" href="#">Ce facem</a>                                               
+                                                <a class = "dropdown-item" href = "#">Management si Structura</a>                                                
+                                                <a class = "dropdown-item" href = "#">Comisii</a>                                                
+                                                <a class = "dropdown-item" href = "#">Membrii nostri</a>                                                
+                                                <a class = "dropdown-item" href = "#">Statutul ADPFR</a>                                                
+                                                <a class="dropdown-item" href="#">Contact</a>                                               
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Misiune</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Adunare Generala</a>
+                                                <a class="dropdown-item" href="#">Cariere ADPFR</a>                                                                                              
+                                                <a class="dropdown-item" href="#">Repertoriu</a>                                                                                              
+                                            </div>
+                                        </li>
+
+                                        <li class = "pl-md-0 ml-0 "></li>
+                                        
+                                        
+                                        <li class = "pl-4 pl-md-0 ml-0 ml-md-4 mt-2 pt-1">
+                                            <div id="switch">
+                                            </div>
+                                        </li>
+                                            
+                                    </ul>
+                                </div>
+                                    
+                            </nav>		
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-            {% endblock %}
+        {% endblock %}
             
             <!-- Scripts -->
             <script src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -107,4 +103,10 @@
         {% block body %}
         {% endblock %}
         
-        </html>
+
+        
+        {% block footer %}
+
+        {% endblock %}
+        
+</html>

@@ -7,7 +7,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name = "index"),
-    
+    path("licenta-reproducere/", views.licenta_reproducere, name = "licenta-reproducere"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

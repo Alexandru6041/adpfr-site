@@ -1,0 +1,202 @@
+.content-landing-name
+{
+    animation: UpDown 1.50s;
+}
+
+.romania-gradient-landing
+{
+    background: -webkit-linear-gradient(left, blue, yellow, red);
+    background: -o-linear-gradient(right, blue, yellow, red);
+    background: -moz-linear-gradient(right, blue, yellow, red);
+    background: linear-gradient(to right, blue, yellow, red);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-34 {
+    background: #5E5DF0;
+    border-radius: 999px;
+    /* box-shadow: #5E5DF0 0 10px 20px -10px; */
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+.button-34:hover
+{
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+}
+
+/* Cards */
+.card-content
+{
+    /* width: 100%; */
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20vh;
+    /* margin-left: 70px; */
+}
+.card
+{
+    width: 100%;
+    max-width: 300px;
+    color: #fff;
+    text-align: center;
+    /* margin-left: 50px; */
+    margin: 30px;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); 
+}
+
+.card.light
+{
+    border: 1px solid rgba(45, 44, 44, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(44, 42, 42, 0.1);
+
+}
+
+.card.light p
+{
+    color: black;
+}
+
+.card.light h2
+{
+    color: black;
+}
+
+.card.light .links i
+{
+    color: black;
+}
+
+.card.light .btn
+{
+    background:rgba(44, 42, 42, 0.1);
+}
+
+
+.card img
+{
+    width: 130px;
+    border-radius: 50%;
+    margin-left: 22%;
+}
+.card h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.card p
+{
+    font-size: 18px;
+    margin: 10px auto;
+
+    max-width: 330px;
+}
+.card .links i
+{
+    width: 30px;
+    margin: 10px 0;
+}
+.btn
+{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    color: #868686;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+    .card-content
+    {
+        display: grid;
+        height:1px;
+    }
+    .card
+    {
+        margin:10px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:1200px)
+{
+    .card-content
+    {
+        display:grid;
+        height: 1px;
+    }
+} 
+@media (max-height: 1000px)
+{
+    .card-content
+    {
+        height:40vh;
+    }
+}
+
+
+/* Transitions */
+
+@keyframes UpDown
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-757%);
+    }
+
+    to
+    {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}

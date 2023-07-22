@@ -3,9 +3,67 @@
 
 {% block body %}
     <link rel = 'stylesheet' href = "{% static './css/index/index-main.css' %}"/>
+    <script src="https://kit.fontawesome.com/dc4a5ce32c.js" crossorigin="anonymous"></script>
 
     <body class = "{{ theme }}">
+        <div class = "section full-height">
+            <div class = "absolute-center">
+                
+                <div class = "section">
+                    <div class = "row">
+                        <div class = "col-12">
+                            <div class = "content-landing-name">
+                                <h1>Asociatia pentru Drepturile Producatorilor<br>de Fonograme din <span class = "romania-gradient-landing"> Romania</span></h1>    
+                                <p class = "text-center">&mdash; Înființată în martie 2006, ADPFR are o experienta de peste 15 ani in protejarea si reprezentarea <br>producatorilor de fonograme 
+                                    din Romania, <br>asigurand respectarea drepturilor de autor si obtinerea justa a remuneratiilor. &mdash;<br><br></p>
+                                    <a class = "link" href = "/despre-noi"> <button class="button-34 text-center" role="button">Afla mai multe</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
 
+        </div>
+
+        <div class = "container">
+            <div class = "card-content">
+            
+                <div class = "card {{ theme }} reveal" id = "card-index-page1">
+                    <img src = "{% static 'assets/images/card-image1.jpg' %}" alt = ""></img>
+                    <h2>Name Card 1</h2>
+                    <p>Descriere Persoana</p>
+                    <div class = "links">
+                        <i class = "">+40 755 987 572</i>
+                        <i class = "">alexchelariu834@gmail.com</i>
+                    </div>
+                    <a href = "#" class = "btn">Contact</a>
+                </div>
+            
+                <div class = "card {{ theme }} reveal", id = "card-index-page2">
+                    <img src = "{% static 'assets/images/card-image1.jpg' %}" alt = ""></img>
+                    <h2>Name Card 1</h2>
+                    <p>Descriere Persoana</p>
+                    <div class = "links">
+                        <i class = "">+40 755 987 572</i>
+                        <i class = "">alexchelariu834@gmail.com</i>
+                    </div>
+                    <a href = "#" class = "btn">Contact</a>
+                </div>
+
+                <div class = "card {{ theme }} reveal" id = "card-index-page3">
+                    <img src = "{% static 'assets/images/card-image1.jpg' %}" alt = ""></img>
+                    <h2>Name Card 1</h2>
+                    <p>Descriere Persoana</p>
+                    <div class = "links">
+                        <i class = "">+40 755 987 572</i>
+                        <i class = "">alexchelariu834@gmail.com</i>
+                    </div>
+                    <a href = "#" class = "btn">Contact</a>
+                </div>
+            
+            </div>
+        </div>
     </body>
 
 {% endblock %}
