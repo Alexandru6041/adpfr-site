@@ -1,0 +1,37 @@
+.main-text
+{
+    font-size:  15px;
+    float: center;
+    padding: 5px 0;
+    text-align: justify;
+    text-indent: 36px;
+
+    display: block;
+    
+    margin-block-start: 10em;
+    margin-block-end: 1em;
+    margin-inline-start: 10em;
+    margin-inline-end: 10em;
+
+
+}
+
+@media (max-width: 767px)
+{
+    .main-text
+    {
+        font-size: 14px;
+        float: center;
+        padding: 5px 0;
+        text-align: justify;
+        text-indent: 36px;
+    
+        display: block;
+    
+        margin-block-start: 10em;
+        margin-block-end: 1em;
+        margin-inline-start: 1em;
+        margin-inline-end: 1em;
+    }
+
+}
