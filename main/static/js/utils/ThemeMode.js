@@ -24,14 +24,17 @@ export default class ChangeThemeClass
 			}
 			
 
-			if ($("body").hasClass("dark") && $("#card-index-page1").hasClass("dark")) 
+			if ($("body").hasClass("dark")) 
 			{
 				$("body").removeClass("dark");
-
-                ///Add light theme to the cards
-				$("#card-index-page1").removeClass("dark");
-				$("#card-index-page2").removeClass("dark");
-				$("#card-index-page3").removeClass("dark");
+				
+				if($("#card-index-page1").hasClass("dark"))
+				{
+					///Add light theme to the cards
+					$("#card-index-page1").removeClass("dark");
+					$("#card-index-page2").removeClass("dark");
+					$("#card-index-page3").removeClass("dark");
+				}
 				
                 $("#switch").removeClass("switched");
 
@@ -47,10 +50,13 @@ export default class ChangeThemeClass
 			else {
 				$("body").addClass("dark");
 
-				///Remove light theme from the cards
-                $("#card-index-page1").addClass("dark");
-				$("#card-index-page2").addClass("dark");
-				$("#card-index-page3").addClass("dark");
+				if(!$("#card-index-page1").hasClass("dark"))
+				{
+					///Remove light theme from the cards	
+					$("#card-index-page1").addClass("dark");
+					$("#card-index-page2").addClass("dark");
+					$("#card-index-page3").addClass("dark");
+				}
 				
                 $("#switch").addClass("switched");
 				
