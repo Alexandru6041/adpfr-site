@@ -69,38 +69,38 @@
     /* margin-left: 50px; */
     margin: 30px;
     padding: 50px 35px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(45, 44, 44, 0.1); 
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); 
-}
-
-.card.light
-{
-    border: 1px solid rgba(45, 44, 44, 0.1);
-    background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(44, 42, 42, 0.1);
+}
+
+.card.dark
+{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
 
 }
 
-.card.light p
+.card.dark p
 {
-    color: black;
+    color: white;
 }
 
-.card.light h2
+.card.dark h2
 {
-    color: black;
+    color: white;
 }
 
-.card.light .links i
+.card.dark .links i
 {
-    color: black;
+    color: white;
 }
 
-.card.light .btn
+.card.dark .btn
 {
-    background:rgba(44, 42, 42, 0.1);
+    background:white;
 }
 
 
@@ -109,24 +109,27 @@
     width: 130px;
     border-radius: 50%;
     margin-left: 22%;
+    color:black;
 }
 .card h2
 {
     font-size: 30px;
     font-weight: 500;
     margin-top: 20px;
+    color: black;
 }
 .card p
 {
     font-size: 18px;
     margin: 10px auto;
-
+    color: black;
     max-width: 330px;
 }
 .card .links i
 {
     width: 30px;
     margin: 10px 0;
+    color: black;
 }
 .btn
 {
@@ -134,7 +137,7 @@
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
-    background: #fff;
+    background: rgba(44, 42, 42, 0.1);
     color: #868686;
     padding: 10px 30px;
     border-radius: 30px;
